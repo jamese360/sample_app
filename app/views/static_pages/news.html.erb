@@ -1,0 +1,35 @@
+<h1>Latest Robotics News</h1>
+<div id="news">
+	<h3>Defense Tech</h3>
+	<ul>
+	<% for entry in FeedEntry.where(:title => "Defense Tech » Robots").limit(10).order('published_at desc') %>
+		<li><%= link_to h(entry.name), entry.url %></li>
+		<li><%= entry.summary %></li><br>
+	<% end %>
+	</ul>
+
+	<h3>IEEE Spectrum</h3>
+	<ul>
+	<% for entry in FeedEntry.where(:title => "IEEE Spectrum Robotics Channel").limit(10).order('published_at desc') %>
+		<li><%= link_to h(entry.name), entry.url %></li>
+		<li><%= entry.summary %></li><br>
+	<% end %>
+	</ul>
+
+	<h3>ScienceDaily</h3>
+	<ul>
+	<% for entry in FeedEntry.where(:title => "ScienceDaily: Robot News").limit(10).order('published_at desc') %>
+		<li><%= link_to h(entry.name), entry.url %></li>
+		<li><%= entry.summary.html_safe %></li><br>
+	<% end %>
+	</ul>
+
+	<h3>Robotics Trends</h3>
+	<ul>
+	<% for entry in FeedEntry.where(:title => "Robotics Trends Recently Filed").limit(10).order('published_at desc') %>
+		<li><%= link_to h(entry.name), entry.url %></li>
+		<li><%= entry.summary.html_safe %></li><br>
+	<% end %>
+	</ul>
+
+</div>

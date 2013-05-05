@@ -41,5 +41,7 @@ class StaticPagesController < ApplicationController
   def uuv
   end
 
+  def news
+  end
 
 end

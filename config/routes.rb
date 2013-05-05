@@ -1,5 +1,7 @@
 SampleApp::Application.routes.draw do
-  match '/home', to: 'static_pages#home'
+  root :to => 'static_pages#home'
+
+  match '/news', to: 'static_pages#news'
 
   match '/help', to: 'static_pages#help'
 

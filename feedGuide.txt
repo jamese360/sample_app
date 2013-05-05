@@ -1,0 +1,25 @@
+To update the feeds
+
+Use the command line within your app
+
+example: blablabla/rails_projects/sample_app$
+
+type: rails c
+
+Rails development environment will load
+
+after the ">" copy and paste the feed_urls:
+
+feed_urls = ["http://feeds.feedburner.com/rt/recently_filed?format=xml", "http://feeds.feedburner.com/IeeeSpectrumRobotics?format=xml", "http://defensetech.org/category/robots/feed/", "http://feeds.sciencedaily.com/sciencedaily/computers_math/robotics?format=xml"]
+
+and press "Enter"
+
+then type: FeedEntry.update_feeds(feed_urls)
+
+and press "Enter"
+
+The feeds will be updated.
+
+Enjoy!
+
+PS. To exit, just type "exit" and press Enter.
