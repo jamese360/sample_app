@@ -1,16 +1,17 @@
 <% provide(:title, 'Help') %>
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Ruby on Rails Tutorial Sample App | <%= yield(:title) %></title>
-  </head>
-  <body>
     <h1>Help</h1>
     <p>
-      Get help on the Ruby on Rails Tutorial at the
-      <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
-      To get help on this sample app, see the
-      <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
+      This page is aimed at giving you a basic insight into the world of Military Robotics; their variations, operations and uses.
     </p>
-  </body>
-</html>
+    <p>
+    <h2>Operations</h2>
+    Today military robots use very sophisticated and advance technology for operations. They use different technologies for reconnaissance, guidance and weaponry. They basically use GPS, Fiber Optic Tethers, LIDARs for guidance. GPS is based on satellite connections and is even used in mobile phones. The fiber optics is a hi-tech and hi-speed communication system especially used by defense. LIDARs are based on laser communication and nowadays used by traffic police to detect over speeding vehicles. For reconnaissance they use other technologies like cameras, electronic RF sensor, RADAR, etc. The robots are mainly used for reconnaissance purposes but they can also carry lethal and non-lethal weapons like AGM-114 Hellfire missiles, M249 saw machine guns, ammo can, bomb diffusal kits, grenades, etc.
+    </p>
+    <p>
+    <h2>variations</h2>
+Military robots come in different shapes and sizes as per the task they are designated for. In the development of military robots, we can consider US Mechatronics which has created or developed a working automated sentry gun and is presently developing it further for commercial as well as military use. As far as military robots development is concerned, we cannot forget MIDARS which is a four-wheeled military robot. This robot is outfitted with many cameras, radar, and a firearm that performs arbitrary patrols around a military base automatically. Their size can vary from a small bot TALON and large UAV MQ-1 Predator. Their design is also task specific like, predator is for surveillance and attack from air so it is more like an airplane while TALON is for attack from ground so it is more like an armoured tank. There are three popular classes of military robots i.e. UAVs (Unmanned Areial Vehicles), UGVs(Unmanned Ground Vehicles) and UUVs(Unmanned Underwater Vehicles).</p>
+<p>
+<%= link_to image_tag("uav1.jpeg", alt: "uav", height: "30%", width: "30%"), 'http://rubyonrails.org/' %>
+<%= link_to image_tag("ugv2.jpg", alt: "ugv", height: "32%", width: "32%"), 'http://rubyonrails.org/' %>
+<%= link_to image_tag("uuv2.jpg", alt: "uuv", height: "28%", width: "28%"), 'http://rubyonrails.org/' %>
+</p>

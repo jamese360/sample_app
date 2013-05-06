@@ -1,5 +1,5 @@
 SampleApp::Application.routes.draw do
-  root to: 'static_pages#home'
+  match '/home', to: 'static_pages#home'
 
   match '/help', to: 'static_pages#help'
 
@@ -8,6 +8,19 @@ SampleApp::Application.routes.draw do
   match '/map', to: 'static_pages#map'
 
   match '/contact', to: 'static_pages#contact'
+
+  match '/africa', to: 'static_pages#africa'
+
+  match '/asia', to: 'static_pages#asia'
+
+  match '/europe', to: 'static_pages#europe'
+
+  match '/australia', to: 'static_pages#australia'
+
+  match '/northAmerica', to: 'static_pages#northAmerica'
+
+  match '/southAmerica', to: 'static_pages#southAmerica'
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

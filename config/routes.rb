@@ -9,6 +9,25 @@ SampleApp::Application.routes.draw do
 
   match '/contact', to: 'static_pages#contact'
 
+  match '/africa', to: 'static_pages#africa'
+
+  match '/asia', to: 'static_pages#asia'
+
+  match '/europe', to: 'static_pages#europe'
+
+  match '/australia', to: 'static_pages#australia'
+
+  match '/northAmerica', to: 'static_pages#northAmerica'
+
+  match '/southAmerica', to: 'static_pages#southAmerica'
+
+  match '/uav', to: 'static_pages#uav'
+
+  match '/ugv', to: 'static_pages#ugv'
+
+  match '/uuv', to: 'static_pages#uuv'
+
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

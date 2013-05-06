@@ -1,9 +1,13 @@
 <% provide(:title, 'Map') %>
     <h1>Map</h1>
-    <p>
-      Get help on the Ruby on Rails Tutorial at the
-      <a href="http://railstutorial.org/help">Rails Tutorial help page</a>.
-      To get help on this sample app, see the
-      <a href="http://railstutorial.org/book">Rails Tutorial book</a>.
-    </p>
+    <div id="map-continents">
+     <ul class="continents">
+     <li class="c1"><%= link_to "Africa", africa_path %></li>
+     <li class="c2"><%= link_to "Asia", asia_path %></li>
+     <li class="c3"><%= link_to "Australia", australia_path %></li>
+     <li class="c4"><%= link_to "Europe", europe_path %></li>
+     <li class="c5"><%= link_to "North America", northAmerica_path %></li>
+     <li class="c6"><%= link_to "South America", southAmerica_path %></li>
+     </ul>
+    </div>
 

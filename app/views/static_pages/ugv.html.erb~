@@ -1,0 +1,15 @@
+<% provide(:title, 'UGVs') %>
+    <h1>UGVs</h1>
+    <p>
+An unmanned ground vehicle (UGV) is a vehicle that operates while in contact with the ground and without an onboard human presence. UGVs can be used for many applications where it may be inconvenient, dangerous, or impossible to have a human operator present. Generally, the vehicle will have a set of sensors to observe the environment, and will either autonomously make decisions about its behavior or pass the information to a human operator at a different location who will control the vehicle through teleoperation.</br>
+The UGV is the land-based counterpart to unmanned aerial vehicles and remotely operated underwater vehicles. Unmanned robotics are being actively developed for both civilian and military use to perform a variety of dull, dirty, and dangerous activities.</p>
+    <p> 
+<h2> The Talon </h2>
+The Talon (as seen in the right-most picture below) is primarily used for bomb disposal, and was incorporated with the ability to be waterproof at 100 ft so that it can search the seas for explosives as well. The Talon was first used in 2000, and over 3,000 units have been distributed world-wide. By 2004, The Talon had been used in over 20,000 separate missions. These missions largely consisted of situations deemed to be too dangerous for humans (Carafano & Gudgel, 2007). These can include entering booby-trapped caves, searching for IEDs, or simply scouting a red combat zone. The Talon is one of the fastest Unmanned Ground Vehicles on the market, easily keeping pace with a running soldier. It can operate for 7 days off of one charge, and is even capable of climbing stairs. This robot was used at Ground Zero during the recovery mission. Like its peers, the Talon was designed to be incredibly durable. According to reports, one unit fell off of a bridge into a river and the soldiers simply turned on the control unit and drove it out of the river.</p>
+</ul> </p>
+<p>
+<%= image_tag("ugv2.jpg", alt: "ugv", height: "34%", width: "34%") %>
+<%= image_tag("ugv4.jpg", alt: "uav", height: "33%", width: "33%") %>
+<%= image_tag("ugv3.jpg", alt: "uuv", height: "33%", width: "33%") %>
+</p>
+<%= link_to "Back", help_path %>

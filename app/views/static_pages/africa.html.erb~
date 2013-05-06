@@ -1,0 +1,8 @@
+<% provide(:title, 'Africa') %>
+    <h1>Africa</h1>
+    <div id="map-continents">
+     <ul class="continents">
+     <li class="c1"><%= link_to "Africa", africa_path %></li>
+       </ul>
+    </div>
+
