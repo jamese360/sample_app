@@ -5,6 +5,18 @@ gem 'bootstrap-sass', '2.1'
 gem 'feedzirra', '0.0.24'
 gem 'curb', '0.8.3'
 
+# New gems
+gem 'will_paginate', '3.0.3'
+gem 'bootstrap-will_paginate', '0.0.6'
+gem "stemmer", "1.0.1"
+gem "dm-core", "1.2.0"
+gem "dm-timestamps", "1.2.0"
+gem "hpricot", "0.8.6"
+gem "robots", :git => "git://github.com/fizx/robots.git"
+gem 'thin'
+gem "data_mapper", "1.2.0"
+# -------
+
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'

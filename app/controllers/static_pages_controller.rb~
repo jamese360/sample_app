@@ -31,4 +31,19 @@ class StaticPagesController < ApplicationController
 
   def about
   end
+
+  def uav
+  end
+
+  def ugv
+  end
+
+  def uuv
+  end
+
+  
+
+  def news
+    @feed_entries = FeedEntry.search(params[:search], params[:page])
+  end
 end

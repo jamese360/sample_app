@@ -1,0 +1,18 @@
+<h1>Latest Robotics News</h1>
+<div id="news">
+	<%= form_tag(news_path, :method => 'get', :class => 'form-search') do %>
+		<p>
+			<%= text_field_tag(:search, params[:search], :class => 'input-xlarge') %>
+			<%= submit_tag("Search Articles", :name => nil, :class => 'btn') %>
+		</p>
+	<% end %>
+
+	<ul>
+	<% for entry in @feed_entries %>
+		<li><%= link_to h(entry.name), entry.url %> | <%= entry.published_at.to_formatted_s(:long) %></li><br>
+		<li><%= entry.summary.html_safe %></li><br>
+	<% end %>
+	</ul>
+
+	<%= will_paginate @feed_entries %>
+</div>

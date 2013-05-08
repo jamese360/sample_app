@@ -1,0 +1,20 @@
+<% provide(:title, 'Scan') %>
+<h1>Your Eye Im The Sky(Web)</h1>
+
+<h2>Gaze Search Engine</h2>
+
+<form method="post" action="/search">
+<input name="q" value="<%= params[:q]%>" size="30"> <input value="search" type="submit">
+</form>
+
+<div><%= "time taken - #{@time_taken}" unless @results.nil?%></div>
+<div id='results'>
+<ol>
+<% @results.each { |result| %>
+	<li><a href='<%= Page.get(result[0]).url%>'><%= Page.get(result[0]).title%></a> <br>
+		<%= Page.get(result[0]).url%>  (score : <%= "%4.3f" % result[1]%>)</li>
+<% } unless @results.nil? %>
+</ol>
+</div>
+        
+</div>

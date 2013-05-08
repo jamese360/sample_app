@@ -24,4 +24,31 @@ ActiveRecord::Schema.define(:version => 20130505062157) do
     t.datetime "updated_at",   :null => false
   end
 
+  create_table "locations", :force => true do |t|
+    t.integer "page_id"
+    t.integer "word_id"
+    t.integer "position"
+  end
+
+  add_index "locations", ["page_id"], :name => "index_locations_on_page_id"
+  add_index "locations", ["word_id", "page_id"], :name => "index_locations_on_word_id_and_page_id"
+  add_index "locations", ["word_id"], :name => "index_locations_on_word_id"
+
+  create_table "pages", :force => true do |t|
+    t.string   "url"
+    t.string   "title"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "pages", ["url"], :name => "index_pages_on_url"
+
+  create_table "words", :force => true do |t|
+    t.string   "stem"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "words", ["stem"], :name => "index_words_on_stem"
+
 end

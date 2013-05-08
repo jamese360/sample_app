@@ -29,6 +29,9 @@ SampleApp::Application.routes.draw do
 
   match '/uuv', to: 'static_pages#uuv'
 
+  match '/search', to: 'static_pages#search'
+
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

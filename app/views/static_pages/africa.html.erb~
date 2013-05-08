@@ -1,8 +1,47 @@
 <% provide(:title, 'Africa') %>
     <h1>Africa</h1>
-    <div id="map-continents">
-     <ul class="continents">
-     <li class="c1"><%= link_to "Africa", africa_path %></li>
-       </ul>
-    </div>
 
+<div id="wrapper">
+<div id="content">
+		<h2>Military Robots</h2>
+		<ul id="bar">
+			<li id="uav">
+				<div class="top">
+					<%= image_tag("UAV.png", alt: "uav") %>
+				</div>
+				<div class="bottom">
+					<div class="infobox">
+						<h3>UAV</h3>
+						<p>1,1</p>
+					</div>
+				</div>
+			</li>
+			<li id="ugv">
+				<div class="top">
+					<%= image_tag("UGV.png", alt: "ugv") %>
+				</div>
+				<div class="bottom">
+					<div class="infobox">
+						<h3>UGV</h3>
+						<p>1,6</p>
+					</div>
+				</div>
+			</li>
+			<li id="uuv">
+				<div class="top">
+					<%= image_tag("UUV.png", alt: "uuv") %>
+				</div>
+				<div class="bottom">
+					<div class="infobox">
+						<h3>UUV</h3>
+						<p>1,4</p>
+					</div>
+				</div>
+			</li>
+
+		</ul>
+		<h3>Numbers in millions sold</h3> 
+		<h4>*Numbers are estimates</4>
+		
+</div>
+</div>

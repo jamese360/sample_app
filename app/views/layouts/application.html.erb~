@@ -3,14 +3,12 @@
   <head>
     <title><%= full_title(yield(:title)) %></title>
     <%= stylesheet_link_tag    "application", media: "all" %>
-    <%= stylesheet_link_tag "cssmap-continents", media: "screen,projection" %>
     <%= javascript_include_tag "application" %>
-    <%= javascript_include_tag "jquery.cssmap" %>
     <%= csrf_meta_tags %>
     <%= render 'layouts/shim' %>
- 
-    <script  type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>  
-  
+    <link rel="stylesheet" type="text/css" media="screen,projection" href="cssmap-continents/cssmap-continents.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cssmapsplugin.com/4/jquery.cssmap.js"></script> 
  <script type="text/javascript">
    $(function($){
      $('#map-continents').cssMap({'size' : 850});

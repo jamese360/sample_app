@@ -1,7 +1,16 @@
+<% provide(:title, 'Home') %>
 <div class="center hero-unit">
   <h1>The all-seeing Robo Eye</h1>
 
-  <%= link_to "Sign up now!", '#', class: "btn btn-large btn-primary" %>
+
+	<%= form_tag(search_path, :method => 'get', :class => 'form-search') do %>
+		<p>Search the web with the Gaze Search Engine; your robotic eye in the sky
+			<%= text_field_tag(:q, params[:q], :class => 'input-xlarge') %>
+			<%= submit_tag("Search", :name => nil, :class => 'btn') %>
+		</p>
+	<% end %>
+
+
 </div>
 
-<%= link_to image_tag("logo.png", alt: "eye"), 'http://rubyonrails.org/' %>
+
